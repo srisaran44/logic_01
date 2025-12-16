@@ -1,0 +1,29 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /LOGICGATES/a
+add wave -noupdate /LOGICGATES/b
+add wave -noupdate /LOGICGATES/and_out
+add wave -noupdate /LOGICGATES/or_out
+add wave -noupdate /LOGICGATES/not_out
+add wave -noupdate /LOGICGATES/nand_out
+add wave -noupdate /LOGICGATES/nor_out
+add wave -noupdate /LOGICGATES/xor_out
+add wave -noupdate /LOGICGATES/xnor_out
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {102 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 40
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ps
+update
+WaveRestoreZoom {20 ps} {1717 ps}
